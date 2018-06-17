@@ -11,6 +11,9 @@ import org.springframework.stereotype.Service;
 import javax.annotation.PreDestroy;
 import java.util.concurrent.ExecutionException;
 
+/**
+ * This producer will block for a response from the server
+ */
 @Service("syncproducer")
 public class SyncMessageProducer implements MessageProducer {
 

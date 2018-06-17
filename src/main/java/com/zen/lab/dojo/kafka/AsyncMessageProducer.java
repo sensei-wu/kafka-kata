@@ -7,6 +7,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * This asynchronous producer will not block for a response from teh server, but callback provides a way to handle any error
+ */
 @Service("asyncproducer")
 public class AsyncMessageProducer implements MessageProducer {
 
